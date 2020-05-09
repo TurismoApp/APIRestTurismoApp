@@ -5,6 +5,8 @@ import { activity } from "./activity.entity";
 export class ubications {
     @PrimaryGeneratedColumn()
     public id: number;
+    @Column({ type: 'int', unique: false, nullable: false })
+    public idactivity: Types.INT24;
 
     @Column()
     public latitude: string;
@@ -13,5 +15,6 @@ export class ubications {
     public longitude: string;
 
     @ManyToOne(type => activity, activity => activity.ubications)
+    @JoinColumn({ name: 'idactivity', referencedColumnName: 'id' })
     public activityOwner: activity;
 }
