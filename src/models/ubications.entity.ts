@@ -6,7 +6,7 @@ import { Types } from "mariadb";
 export class ubications {
     @PrimaryGeneratedColumn()
     public id: number;
-
+    
     @Column({ type: 'int', nullable: false, unique: false})
     public idActivity: Types.INT24;
 
