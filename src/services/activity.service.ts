@@ -1,4 +1,4 @@
-import { EntityRepository, Repository } from "typeorm";
+import { EntityRepository, Repository, createQueryBuilder } from "typeorm";
 import { activity } from "src/models/activity.entity";
 import { reposComplement } from "./repositorys.template";
 import { Injectable, Inject } from "@nestjs/common";
@@ -12,6 +12,12 @@ export class ActivityService implements reposComplement {
 
     getAll() {
         return this.repo.find();
+    }
+
+    async getAllimages() {
+        return await createQueryBuilder('activity')
+        .leftJoinAndSelect('activity.images','images')
+        .getMany();
     }
     getOne(id: number) {
        return this.repo.findOne(id);

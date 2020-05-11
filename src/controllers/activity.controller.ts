@@ -10,7 +10,7 @@ export class activityController {
 
     @Get()
     public async getActivitys() {
-        return await this.activityService.getAll();
+        return await this.activityService.getAllimages();
     }
 
     @Get(':Id')

@@ -7,6 +7,9 @@ export class images {
     @PrimaryGeneratedColumn()
     public id: number;
 
+    @Column({ type: 'int', unique: false, nullable: false})
+    public idActivity: Types.INT24;
+
     @Column({ length: 21 , nullable: true})
     public title: string;
 
@@ -14,5 +17,6 @@ export class images {
     public link: string;
 
     @ManyToOne(type => activity, activity => activity.images)
+    @JoinColumn({ name: 'idActivity', referencedColumnName: 'id' })
     activity: activity;
 }

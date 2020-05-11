@@ -40,7 +40,7 @@ export const ACTIVITY: activity[] = JSON.parse(`[
 	{
 		"id": 5,
 		"idCharge": 10,
-		"title": "Visita al callejón de la Purrututú:",
+		"title": "Visita al callejón de la Purrututú",
 		"description": "Es uno de los más famosos callejones ubicado en el barrio Cañaguate, hoy en día es uno de los poco sitios que se conserva originalmente con inspiración para los bohemios. Está ubicado en el centro historico de Valledupar.",
 		"dateStart": "2020-04-30 06:16:00",
 		"dateEnd": "2020-10-08 06:16:00",
@@ -67,7 +67,7 @@ export const ACTIVITY: activity[] = JSON.parse(`[
 	{
 		"id": 8,
 		"idCharge": 4,
-		"title": "Ruta El río Badillo",
+		"title": "Ruta 'El río Badillo'",
 		"description": "Las aguas del río Badillo han sido fuente de inspiración de poetas, cantantes, compositores y escritores que han basado en ellas sus creaciones artísticas.",
 		"dateStart": "2020-12-04 20:11:55",
 		"dateEnd": "",
@@ -85,7 +85,7 @@ export const ACTIVITY: activity[] = JSON.parse(`[
 	{
 		"id": 10,
 		"idCharge": 4,
-		"title": "Visita Centro de Memeoria el Cuartito ",
+		"title": "Visita Centro de Memoria el Cuartito ",
 		"description": "Este es una viva imagen de como era la vida en la ciudad en los años 40' y 50'. Este pequeño centro de memorias conservado por la familia jimenez, Es una atraccion para conocer la cultura y costumbres de valledupar",
 		"dateStart": "2020-09-05 08:34:20",
 		"dateEnd": "",
@@ -94,7 +94,7 @@ export const ACTIVITY: activity[] = JSON.parse(`[
 	{
 		"id": 11,
 		"idCharge": 3,
-		"title": "La Pedregoza",
+		"title": "La Pedregosa",
 		"description": "Centro recreacional de la caja de compensacion familiar Comfacesar",
 		"dateStart": "2020-05-18 08:40:41",
 		"dateEnd": "",
@@ -149,7 +149,7 @@ export const ACTIVITY: activity[] = JSON.parse(`[
 		"id": 17,
 		"idCharge": 5,
 		"title": "Visita EL Monumento de Los tres grandes",
-		"description": "Este monumento hace referencia a tres personajes que le han dado mucha gloria al folclor, ello son Alfonso "Poncho" Zuleta,jorge oñate "El jilguero de America" y Diomedes Diaz "El Cacique de la junta.",
+		"description": "Este monumento hace referencia a tres personajes que le han dado mucha gloria al folclor, ello son Alfonso 'Poncho' Zuleta,jorge oñate 'El jilguero de America' y Diomedes Diaz 'El Cacique de la junta.'",
 		"dateStart": "2020-05-18 08:40:41",
 		"dateEnd": "",
 		"state": "E"
@@ -166,7 +166,7 @@ export const ACTIVITY: activity[] = JSON.parse(`[
 	{
 		"id": 19,
 		"idCharge": 5,
-		"title": "Visita EL Monumento la Revolucion en Marchar",
+		"title": "Visita EL Monumento La Revolucion en Marcha",
 		"description": "Es un monumento con un gran signiificado politico. Uno de los que ms impacta visualmente no solo por su altura o su ubicacion central.",
 		"dateStart": "2020-05-18 08:40:41",
 		"dateEnd": "",
@@ -175,7 +175,7 @@ export const ACTIVITY: activity[] = JSON.parse(`[
 	{
 		"id": 20,
 		"idCharge": 5,
-		"title": "Visita EL Monumento Hernando Santan",
+		"title": "Visita EL Monumento Hernando De Santana",
 		"description": "Esta cultura fue diseñada por el vallenato jorge Maestre como homenaje al capitan español Don hernando santana. La cultura representa a un consquistador español.",
 		"dateStart": "2020-05-18 08:40:41",
 		"dateEnd": "",
@@ -191,7 +191,7 @@ export const ACTIVITY: activity[] = JSON.parse(`[
 		"state": "E"
 	},
 	{
-		"id": 21,
+		"id": 22,
 		"idCharge": 5,
 		"title": "Visita EL Monumento El Obelisco",
 		"description": "En honor a la vida el obelisco es el referente egipcion en la capital mundial del vallenta. Esta estructura de 30 metros de altra fue entregada a la ciudad en 1994.",
@@ -200,7 +200,7 @@ export const ACTIVITY: activity[] = JSON.parse(`[
 		"state": "E"
 	},
 	{
-		"id": 22,
+		"id": 23,
 		"idCharge": 5,
 		"title": "Visita EL Monumento Mi Pedazo de Acordeon",
 		"description": "Es una obra relizda por el Escultor Gabriel Beltran, en honor al juglar y rey vallenato, Alejandro duran de mi Mi pedazo de acordeon.",
@@ -209,7 +209,7 @@ export const ACTIVITY: activity[] = JSON.parse(`[
 		"state": "E"
 	},
 	{
-		"id": 23,
+		"id": 24,
 		"idCharge": 5,
 		"title": "Visita EL Monumento La Pilonera Mayor",
 		"description": "Es un homenaje a la fundadora del festival vallenato la cacica, Consuelo Araujonoguera.",
@@ -218,7 +218,7 @@ export const ACTIVITY: activity[] = JSON.parse(`[
 		"state": "E"
 	},
 	{
-		"id": 24,
+		"id": 25,
 		"idCharge": 5,
 		"title": "Visita EL Monumento Los Gallos",
 		"description": "La gloriesta de los gallos hace referencia a una de las tradiciones peleas e gallos, y gran aficion, simpatia, y popularidad que los galleros tienen en la region.",
@@ -227,7 +227,7 @@ export const ACTIVITY: activity[] = JSON.parse(`[
 		"state": "E"
 	},
 	{
-		"id": 24,
+		"id": 26,
 		"idCharge": 5,
 		"title": "Visita EL Monumento La Maria Mulata",
 		"description": "Este Monumento es un regalo a la ciudad, del reconocido pintor y escultor colombiano el Maestro Enrique Grau, Es un pequeño pajaro negro inofensivo, muy reconocido en region donde se le llama cocinera.",
@@ -236,7 +236,7 @@ export const ACTIVITY: activity[] = JSON.parse(`[
 		"state": "E"
 	},
 	{
-		"id": 25,
+		"id": 27,
 		"idCharge": 5,
 		"title": "Visita El Maderos Teatro",
 		"description": "Maderos Teatro, Colectivo de artistas motivados por la necesidad que le urgen al quehacer teatral en el departamento del cesar y el caribe colombiano.",
@@ -245,21 +245,12 @@ export const ACTIVITY: activity[] = JSON.parse(`[
 		"state": "E"
 	},
 	{
-		"id": 26,
+		"id": 28,
 		"idCharge": 5,
 		"title": "Visita La Academia de Musica Vallenata Andres Turco Gil",
 		"description": "Llegar a la academia es una experiencia de mucho acercamiento con la cultura pues escuchar las primeras notas de los niños interpretando el acordeon hace entrar al visitante a un mundo donde la musica es la protagonista.",
 		"dateStart": "2020-05-18 08:40:41",
 		"dateEnd": "",
 		"state": "E"
-	},
-	{
-		"id": 27,
-		"idCharge": 5,
-		"title": "Visita La Academia de Musica Vallenata Andres Turco Gil",
-		"description": "Llegar a la academia es una experiencia de mucho acercamiento con la cultura pues escuchar las primeras notas de los niños interpretando el acordeon hace entrar al visitante a un mundo donde la musica es la protagonista.",
-		"dateStart": "2020-05-18 08:40:41",
-		"dateEnd": "",
-		"state": "E"
-    }
+	}
 ]`);

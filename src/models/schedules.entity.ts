@@ -7,10 +7,10 @@ export class schedules {
     @PrimaryGeneratedColumn()
     public id: number;
 
-    @Column({ type: 'int', nullable: false })
+    @Column({ type: 'int', unique:false, nullable: false })
     public idActivityParent: Types.INT24;
 
-    @Column({ type: 'int', nullable: false })
+    @Column({ type: 'int', unique:false, nullable: false })
     public idActivityChild: Types.INT24;
 
     @ManyToOne(type => activity, activityParent => activityParent.schedules)

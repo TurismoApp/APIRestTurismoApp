@@ -23,7 +23,7 @@ export class activity {
     @Column()
     public dateStart: Date;
 
-    @Column()
+    @Column({nullable: true})
     public dateEnd?: Date;
 
     @Column({ length: 3, default: 'E'})
