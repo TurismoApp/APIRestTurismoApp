@@ -18,6 +18,10 @@ export class imageController {
         return await this.imageService.getOne(<number>params.Id);
     }
 
+    @Get('/activity/:id')
+    public async getimagesActivitys(@Param() params: any) {
+        return await this.imageService.getImages(<number>params.id);
+    }
     @Post(':obj')
     public async postImage(@Param() params: any) {
         return await this.imageService.insertOne(<images>params.obj);

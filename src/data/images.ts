@@ -186,7 +186,7 @@ export const IMAGES:images[] = JSON.parse(`[
 		"id": 30,
 		"idActivity": 11,
 		"title": "Norine",
-		"link": "https://lh3.googleusercontent.com/proxy/YBFxZDnl57MyGpET_gchjwAmCloiBE__j2ryaEPAtg-Y-AdfleOW63KbF8j0p2KH5oHxzIeozi-Oxhz8SsmvnykaKgum1DMq_vOclXILxjZaoEvG0--4YEI9jssUubyaKCU6QFlTXtIsPHwsMCtDRZjkCpI"
+		"link": "https://fastly.4sqi.net/img/general/600x600/11615363_OGbelGAwsoN-Ea3gFq5klr0QMrGcCB6Z1jUy8eCxjME.jpg"
 	},
 	{
 		"id": 31,
@@ -288,7 +288,7 @@ export const IMAGES:images[] = JSON.parse(`[
 		"id": 47,
 		"idActivity": 17,
 		"title": "Valera",
-		"link": "https://scontent-yyz1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/81347753_746635619162255_6861082243595086931_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=111&_nc_ohc=KEL3mo10egMAX9s-j4L&oh=9a5f92c505e83900129e60f99ec63581&oe=5EBC44AE"
+		"link": "https://avancesdelfolclor.files.wordpress.com/2018/10/imagen-de-acordec3b3n1-e1540334999285.jpg?w=1038&h=576&crop=1"
     },
     {
 		"id": 48,
@@ -354,7 +354,7 @@ export const IMAGES:images[] = JSON.parse(`[
 		"id": 58,
 		"idActivity": 23,
 		"title": "Madelle",
-		"link": "https://scontent-lga3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/c180.0.720.720a/s640x640/43085348_513494902451604_3749745615274072657_n.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_cat=100&_nc_ohc=U1LBKqBA_F8AX_CGGYs&oh=6ea7adb69f53df1b05078e591ecd0c38&oe=5EC566B7"
+		"link": "https://www.siturcesar.com/multimedia/atracciones/atraccion-22/portada.jpg"
 	},
 	{
 		"id": 59,
@@ -420,7 +420,7 @@ export const IMAGES:images[] = JSON.parse(`[
 		"id": 69,
 		"idActivity": 28,
 		"title": "Winifred",
-		"link": "https://lh3.googleusercontent.com/proxy/lZatAEnPMx3MMx_0Ijm2k2P1ZLT-sLzMfoSTeV0vgCL_UMQQ_UDjndPlE12M7-ofrbaHf8eCTAipVNyZfz1TLeQ4UoTGjx_2g7EjBok8ykke6XKF_TWH7fy9hQficVipwCWopjhY41gShhvd9oQF0cLcGvTMQaS9ZoumZ50CRl7hAwIK_miG_YXDwsCllo8"
+		"link": "https://1.bp.blogspot.com/-cezXmUyHyOc/T6UjnwRJg-I/AAAAAAAAATk/i30GkyTh7B0/s1600/festival+vallenato+turco+gil.jpg"
 	},
 	{
 		"id": 70,
@@ -432,7 +432,7 @@ export const IMAGES:images[] = JSON.parse(`[
 		"id": 71,
 		"idActivity": 28,
 		"title": "Kary",
-		"link": "https://lh3.googleusercontent.com/proxy/s4NL1jA1edNfmmGxUMVB38K-HViwU1SPS_TB71G_xqHq5aozGObi1Rdi7WzZW4JSjlI2lQgedvtpw6aT5sSn8M1AWAArmoZyAl8957_QMhxpqCjLvSS8tnUQLNoqEKLBXdCy1CeQ"
+		"link": "https://airevallenato.com/wp-content/uploads/2019/06/IMG_20190610_200727_104.jpg"
 	},
 	{
 		"id": 72,

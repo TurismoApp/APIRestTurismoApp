@@ -1,4 +1,4 @@
-import { EntityRepository, Repository } from "typeorm";
+import { EntityRepository, Repository, SelectQueryBuilder, createQueryBuilder } from "typeorm";
 import { images } from "src/models/images.entity";
 import { reposComplement } from "./repositorys.template";
 import { Inject, Injectable } from "@nestjs/common";
@@ -12,6 +12,11 @@ export class ImagesService implements reposComplement {
     getAll() {
         return this.repo.find();
     }
+
+    getImages(id: number) {
+        return this.repo.find({where: {idActivity: id}});
+    }
+
     getOne(id: number) {
        return this.repo.findOne(id);
     }
