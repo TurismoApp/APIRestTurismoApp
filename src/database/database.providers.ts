@@ -1,4 +1,7 @@
 import { createConnection } from 'typeorm';
+import { FirebaseAdminCoreModule } from '@tfarras/nestjs-firebase-admin/dist/index';
+import admin = require('firebase-admin');
+const credentials = require('./firebaseadminsdk.json');
 
 export const databaseProviders = [
   {
@@ -11,9 +14,16 @@ export const databaseProviders = [
       password: '',
       database: 'YucappDB',
       entities: [
-          'dist/models/*.entity{.ts,.js}',
+        'dist/models/*.entity{.ts,.js}',
       ],
       synchronize: true,
     }),
   },
 ];
+
+export const firebaseApp = FirebaseAdminCoreModule.forRootAsync({
+  useFactory: () => ({
+    credential: admin.credential.cert(credentials),
+    databaseURL: "https://yucappmusic.firebaseio.com"
+  })
+});

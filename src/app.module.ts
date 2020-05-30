@@ -11,6 +11,9 @@ import { ImagesService } from './services/images.service';
 import { ScheduleService } from './services/schedules.service';
 import { UbicationsService } from './services/ubications.service';
 import { inChargeService } from './services/inCharge.service';
+import { MusicService } from './services/getMusic.service';
+import { MusicController } from './controllers/music.controller';
+import { firebaseApp } from './database/database.providers';
 @Module({
   imports: [
     TypeOrmModule,
@@ -21,14 +24,16 @@ import { inChargeService } from './services/inCharge.service';
     imageController,
     scheduleController,
     ubicationsController,
-    inChargeController
+    inChargeController,
+    MusicController
   ],
   providers: [
     ActivityService,
     ImagesService,
     ScheduleService,
     UbicationsService,
-    inChargeService
+    inChargeService,
+    MusicService
   ],
 })
 
