@@ -1,6 +1,7 @@
 import { Module } from "@nestjs/common";
-import { activityProviders, imagesProviders, inChargeProviders, schedulesProviders, ubicationsProviders } from "./Entity.providers";
+import { activityProviders, imagesProviders, inChargeProviders, schedulesProviders, ubicationsProviders, placesProviders, EstablishProviders } from "./Entity.providers";
 import { databaseProviders } from "./database.providers";
+
 
 @Module({
     providers: [
@@ -9,7 +10,9 @@ import { databaseProviders } from "./database.providers";
         ...imagesProviders,
         ...inChargeProviders,
         ...schedulesProviders,
-        ...ubicationsProviders
+        ...ubicationsProviders,
+        ...placesProviders,
+        ...EstablishProviders
     ],
     exports: [
         ...databaseProviders,
@@ -17,8 +20,10 @@ import { databaseProviders } from "./database.providers";
         ...imagesProviders,
         ...inChargeProviders,
         ...schedulesProviders,
-        ...ubicationsProviders
+        ...ubicationsProviders,
+        ...placesProviders,
+        ...EstablishProviders
     ]
 })
 
-export class DatabaseModule {}
+export class DatabaseModule { }
