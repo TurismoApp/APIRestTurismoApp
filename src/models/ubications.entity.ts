@@ -21,6 +21,6 @@ export class ubications {
     @JoinColumn({ name: 'idActivity', referencedColumnName: 'id' })
     public activityOwner: activity;
 
-    @OneToOne(type => place, place => place.places)
+    @OneToOne(type => place, place => place.ubications)
     public inplace: place;
 }

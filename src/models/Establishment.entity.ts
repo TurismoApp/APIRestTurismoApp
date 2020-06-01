@@ -14,7 +14,7 @@ export class Establishment {
     @Column()
     public description: string;
 
-    @OneToOne(type => place, place => place.idEstablish)
+    @ManyToOne(type => place, place => place.idEstablish)
     public Establish: place;
 
 }

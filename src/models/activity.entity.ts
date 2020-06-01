@@ -11,7 +11,7 @@ export class activity {
     @PrimaryGeneratedColumn()
     public id: number;
 
-    @Column({ type: 'int', unique: false ,nullable: false })
+    @Column({ type: 'int', unique: false, nullable: false })
     public idCharge: Types.INT24;
 
     @Column()
@@ -19,15 +19,15 @@ export class activity {
 
     @Column()
     public description: string;
-    
+
     @Column()
     public dateStart: Date;
 
-    @Column({nullable: true})
+    @Column({ nullable: true })
     public dateEnd?: Date;
 
-    @Column({ length: 3, default: 'E'})
-    public state: string;  
+    @Column({ length: 3, default: 'E' })
+    public state: string;
 
     @ManyToOne(type => inCharge, charge => charge.activitys)
     @JoinColumn({ name: 'idCharge', referencedColumnName: 'id' })
@@ -35,10 +35,10 @@ export class activity {
 
     @OneToMany(type => schedules, schedule => schedule.activityParent)
     public schedules: schedules[];
-        
+
     @OneToMany(type => ubications, ubication => ubication.activityOwner)
     public ubications: ubications[];
 
     @OneToMany(type => images, image => image.activity)
-    public images: images[]; 
+    public images: images[];
 }

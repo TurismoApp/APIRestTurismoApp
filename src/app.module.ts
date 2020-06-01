@@ -11,6 +11,12 @@ import { ImagesService } from './services/images.service';
 import { ScheduleService } from './services/schedules.service';
 import { UbicationsService } from './services/ubications.service';
 import { inChargeService } from './services/inCharge.service';
+import { placeService } from './services/place.service';
+import { EstablishmentService } from './services/establishment.service';
+import { placeController } from './controllers/place.controller';
+import { establishmentController } from './controllers/establishment.controller';
+
+
 @Module({
   imports: [
     TypeOrmModule,
@@ -21,15 +27,20 @@ import { inChargeService } from './services/inCharge.service';
     imageController,
     scheduleController,
     ubicationsController,
-    inChargeController
+    inChargeController,
+    placeController,
+    establishmentController
   ],
   providers: [
     ActivityService,
     ImagesService,
     ScheduleService,
     UbicationsService,
-    inChargeService
+    inChargeService,
+    EstablishmentService,
+    placeService
+
   ],
 })
 
-export class AppModule {}
+export class AppModule { }
