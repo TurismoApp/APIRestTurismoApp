@@ -6,7 +6,7 @@ import { activity } from "src/models/activity.entity";
 export class activityController {
     constructor(
         private activityService: ActivityService
-    ) {}
+    ) { }
 
     @Get()
     public async getActivitys() {

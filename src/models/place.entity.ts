@@ -13,11 +13,8 @@ export class place {
     @Column({ type: 'int', nullable: true, unique: false })
     public idubications: Types.INT24;
 
-    @Column({ type: 'int', unique: false, nullable: false })
+    @Column({ type: 'int', unique: false, nullable: true })
     public idtestablish: Types.INT24;
-
-    @Column({ type: 'int', unique: false, nullable: false })
-    public idimages: Types.INT24;
 
     @Column()
     public name: string;
@@ -39,13 +36,12 @@ export class place {
 
     @ManyToOne(type => ubications, ubications => ubications.inplace)
     @JoinColumn({ name: 'idubications', referencedColumnName: 'id' })
-    public places: ubications;
+    public ubications: ubications;
 
-    @OneToOne(type => Establishment, Establishment => Establishment.Establish)
+    @OneToMany(type => images, images => images.place)
+    public images: images[];
+
+    @OneToMany(type => Establishment, Establishment => Establishment.Establish)
     @JoinColumn({ name: 'idtestablish', referencedColumnName: 'id' })
     public idEstablish: Establishment;
-
-    @OneToMany(type => images, images => images.image)
-    @JoinColumn({ name: 'idimages', referencedColumnName: 'id' })
-    image: images[];
 }

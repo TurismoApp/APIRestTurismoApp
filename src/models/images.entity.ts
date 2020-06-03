@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn, OneToOne } from "typeorm";
+import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn, OneToOne, OneToMany } from "typeorm";
 import { Types } from 'mariadb';
 import { activity } from "./activity.entity";
 import { place } from "./place.entity";
@@ -11,6 +11,9 @@ export class images {
     @Column({ type: 'int', unique: false, nullable: false })
     public idActivity: Types.INT24;
 
+    @Column({ type: 'int', unique: false, nullable: true })
+    public idplaces: Types.INT24;
+
     @Column({ length: 21, nullable: true })
     public title: string;
 
@@ -21,6 +24,7 @@ export class images {
     @JoinColumn({ name: 'idActivity', referencedColumnName: 'id' })
     activity: activity;
 
-    @ManyToOne(type => place, place => place.image)
-    public image: place;
-}
+    @ManyToOne(type => place, place => place.images)
+    @JoinColumn({ name: 'idplaces', referencedColumnName: 'id' })
+    place: place;
+}   

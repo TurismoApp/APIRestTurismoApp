@@ -11,6 +11,10 @@ import { schedules } from './models/schedules.entity';
 import { SCHEDULES } from './data/schedules';
 import { images } from './models/images.entity';
 import { IMAGES } from './data/images';
+import { Establishment } from './models/Establishment.entity';
+import { ESTABLISHMENT } from './data/establishment';
+import { place } from './models/place.entity';
+import { PLACE } from './data/place';
 
 /* 
   CREAR BASE DE DATOS EN PHPMYADMIN CON NOMBRE: yucappdb
@@ -32,6 +36,8 @@ async function bootstrap() {
   await getRepository(inCharge).save(IN_CHARGE);
   await getRepository(activity).save(ACTIVITY);
   await getRepository(ubications).save(UBICATIONS);
+  await getRepository(Establishment).save(ESTABLISHMENT);
+  await getRepository(place).save(PLACE);
   await getRepository(images).save(IMAGES);
   await getRepository(schedules).save(SCHEDULES);
   app.enableCors();

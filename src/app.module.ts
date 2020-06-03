@@ -14,6 +14,11 @@ import { inChargeService } from './services/inCharge.service';
 import { MusicService } from './services/getMusic.service';
 import { MusicController } from './controllers/music.controller';
 import { firebaseApp } from './database/database.providers';
+import { placeService } from './services/place.service';
+import { EstablishmentService } from './services/establishment.service';
+import { placeController } from './controllers/place.controller';
+import { establishmentController } from './controllers/establishment.controller';
+
 @Module({
   imports: [
     TypeOrmModule,
@@ -25,6 +30,8 @@ import { firebaseApp } from './database/database.providers';
     scheduleController,
     ubicationsController,
     inChargeController,
+    placeController,
+    establishmentController
     MusicController
   ],
   providers: [
@@ -32,9 +39,10 @@ import { firebaseApp } from './database/database.providers';
     ImagesService,
     ScheduleService,
     UbicationsService,
-    inChargeService,
     MusicService
+    placeService
+    EstablishmentService,
   ],
 })
 
-export class AppModule {}
+export class AppModule { }
