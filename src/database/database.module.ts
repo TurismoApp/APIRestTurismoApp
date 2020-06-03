@@ -1,9 +1,12 @@
 import { Module } from "@nestjs/common";
 import { activityProviders, imagesProviders, inChargeProviders, schedulesProviders, ubicationsProviders, placesProviders, EstablishProviders } from "./Entity.providers";
-import { databaseProviders } from "./database.providers";
+import { databaseProviders, firebaseApp } from "./database.providers";
 
 
 @Module({
+    imports: [
+        firebaseApp
+    ],
     providers: [
         ...databaseProviders,
         ...activityProviders,
