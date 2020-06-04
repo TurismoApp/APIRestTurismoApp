@@ -39,9 +39,9 @@ import { establishmentController } from './controllers/establishment.controller'
     ImagesService,
     ScheduleService,
     UbicationsService,
-    MusicService
-    placeService
-    EstablishmentService,
+    MusicService,
+    placeService,
+    EstablishmentService
   ],
 })
 
