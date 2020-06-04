@@ -41,7 +41,8 @@ import { establishmentController } from './controllers/establishment.controller'
     UbicationsService,
     MusicService,
     placeService,
-    EstablishmentService
+    EstablishmentService,
+    inChargeService
   ],
 })
 
