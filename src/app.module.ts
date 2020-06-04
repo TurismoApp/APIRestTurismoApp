@@ -31,7 +31,7 @@ import { establishmentController } from './controllers/establishment.controller'
     ubicationsController,
     inChargeController,
     placeController,
-    establishmentController
+    establishmentController,
     MusicController
   ],
   providers: [
