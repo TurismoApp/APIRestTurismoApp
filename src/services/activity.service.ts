@@ -19,6 +19,10 @@ export class ActivityService implements reposComplement {
         .leftJoinAndSelect('activity.images','images')
         .getMany();
     }
+
+    async getSchedules() {
+
+    }
     getOne(id: number) {
        return this.repo.findOne(id);
     }
