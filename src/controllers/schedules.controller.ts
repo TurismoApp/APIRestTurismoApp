@@ -8,6 +8,11 @@ export class scheduleController {
         private readonly scheduleService: ScheduleService
     ) {}
 
+    @Get('Chronogram/:Id')
+    public async getChronogram(@Param() params: any) {
+        return await this.scheduleService.getSchedulesActivity(<number>params.Id);
+    }
+
     @Get()
     public async getSchedules() {
         return await this.scheduleService.getAll();

@@ -8,6 +8,11 @@ export class ubicationsController {
         private readonly ubicationsService: UbicationsService
     ) {}
 
+    @Get('activity/:Id')
+    public async getUbicationsActivity(@Param() params: any) {
+        return await this.ubicationsService.getUbicationActiviy(<number>params.Id);
+    }
+
     @Get()
     public async getUbications() {
         return await this.ubicationsService.getAll();

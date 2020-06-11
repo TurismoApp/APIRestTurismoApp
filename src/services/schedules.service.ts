@@ -1,5 +1,5 @@
 import { reposComplement } from "./repositorys.template";
-import { EntityRepository, Repository } from "typeorm";
+import { Repository, createQueryBuilder } from "typeorm";
 import { schedules } from "src/models/schedules.entity";
 import { Inject, Injectable } from "@nestjs/common";
 
@@ -10,6 +10,15 @@ export class ScheduleService implements reposComplement {
     ) {
     
     }
+
+    async getSchedulesActivity(id: number) {
+        return await createQueryBuilder('schedules')
+        .leftJoinAndSelect('schedules.activityChild','activity')
+        .leftJoinAndSelect('activity.images','images')
+        .where({ idActivityParent: id })
+        .getMany();
+    }
+
     getAll() {
         return this.repo.find();
     }
