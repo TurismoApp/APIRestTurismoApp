@@ -447,7 +447,7 @@ export const IMAGES: images[] = JSON.parse(`[
 		"idActivity": 26,
 		"idplaces": 2,
 		"title": "Dorene",
-		"link": "https://i2.wp.com/elpilon.com.co/wp-content/uploads/2014/01/MARIA-MULATA.jpg?fit=554%2C369&ssl=1"
+		"link": "https://cdn.colombia.com/sdi/2012/12/28/monumento-a-la-maria-mulata-720147.jpg"
 	},
 	{
 		"id": 64,
